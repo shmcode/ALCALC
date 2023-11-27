@@ -17,13 +17,13 @@ public class Inicio extends javax.swing.JFrame {
         FocusColor = new Color(	27, 142, 146);*/
         
         Panel1.setBackground(DefaultColor);
-        metodoMatrices.setBackground(DefaultColor);
+        metodoDeterminante.setBackground(DefaultColor);
         triangularSuperior.setBackground(DefaultColor);
         escalonadaReducida.setBackground(DefaultColor);
         matrizTranspuesta.setBackground(DefaultColor);
-        transpuestaInversa.setBackground(DefaultColor);
-        determinante.setBackground(DefaultColor);
-        metodoBiseccion.setBackground(DefaultColor);
+        matrizInversa.setBackground(DefaultColor);
+        metodoNewton.setBackground(DefaultColor);
+        metodoFalsaPosicion.setBackground(DefaultColor);
         programasExtras.setBackground(DefaultColor);
 
 
@@ -35,14 +35,15 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Panel1 = new javax.swing.JPanel();
-        metodoMatrices = new javax.swing.JButton();
+        metodoDeterminante = new javax.swing.JButton();
         triangularSuperior = new javax.swing.JButton();
         escalonadaReducida = new javax.swing.JButton();
         matrizTranspuesta = new javax.swing.JButton();
-        transpuestaInversa = new javax.swing.JButton();
-        determinante = new javax.swing.JButton();
-        metodoBiseccion = new javax.swing.JButton();
+        matrizInversa = new javax.swing.JButton();
+        metodoNewton = new javax.swing.JButton();
+        metodoFalsaPosicion = new javax.swing.JButton();
         programasExtras = new javax.swing.JButton();
+        metodoBiseccion = new javax.swing.JButton();
         tabDashboard = new javax.swing.JTabbedPane();
         panelDefault = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -66,33 +67,33 @@ public class Inicio extends javax.swing.JFrame {
         Panel1.setBackground(new java.awt.Color(64, 169, 184));
         Panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        metodoMatrices.setBackground(new java.awt.Color(64, 169, 184));
-        metodoMatrices.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        metodoMatrices.setForeground(new java.awt.Color(255, 255, 255));
-        metodoMatrices.setText("Sarrus, Gauss & Cofactores");
-        metodoMatrices.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        metodoMatrices.setBorderPainted(false);
-        metodoMatrices.setContentAreaFilled(false);
-        metodoMatrices.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        metodoMatrices.addFocusListener(new java.awt.event.FocusAdapter() {
+        metodoDeterminante.setBackground(new java.awt.Color(64, 169, 184));
+        metodoDeterminante.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        metodoDeterminante.setForeground(new java.awt.Color(255, 255, 255));
+        metodoDeterminante.setText("Determinante");
+        metodoDeterminante.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        metodoDeterminante.setBorderPainted(false);
+        metodoDeterminante.setContentAreaFilled(false);
+        metodoDeterminante.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        metodoDeterminante.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                metodoMatricesFocusGained(evt);
+                metodoDeterminanteFocusGained(evt);
             }
         });
-        metodoMatrices.addMouseListener(new java.awt.event.MouseAdapter() {
+        metodoDeterminante.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                metodoMatricesMouseClicked(evt);
+                metodoDeterminanteMouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                metodoMatricesMousePressed(evt);
+                metodoDeterminanteMousePressed(evt);
             }
         });
-        metodoMatrices.addActionListener(new java.awt.event.ActionListener() {
+        metodoDeterminante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                metodoMatricesActionPerformed(evt);
+                metodoDeterminanteActionPerformed(evt);
             }
         });
-        Panel1.add(metodoMatrices, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 210, 40));
+        Panel1.add(metodoDeterminante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 210, 40));
 
         triangularSuperior.setBackground(new java.awt.Color(64, 169, 184));
         triangularSuperior.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -141,32 +142,47 @@ public class Inicio extends javax.swing.JFrame {
         });
         Panel1.add(matrizTranspuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 210, 40));
 
-        transpuestaInversa.setBackground(new java.awt.Color(64, 169, 184));
-        transpuestaInversa.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        transpuestaInversa.setForeground(new java.awt.Color(255, 255, 255));
-        transpuestaInversa.setText("Transpuesta e Inversa");
-        transpuestaInversa.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        transpuestaInversa.setBorderPainted(false);
-        transpuestaInversa.setContentAreaFilled(false);
-        Panel1.add(transpuestaInversa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 210, 40));
+        matrizInversa.setBackground(new java.awt.Color(64, 169, 184));
+        matrizInversa.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        matrizInversa.setForeground(new java.awt.Color(255, 255, 255));
+        matrizInversa.setText("Matriz Inversa");
+        matrizInversa.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        matrizInversa.setBorderPainted(false);
+        matrizInversa.setContentAreaFilled(false);
+        matrizInversa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                matrizInversaMouseClicked(evt);
+            }
+        });
+        Panel1.add(matrizInversa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 210, 40));
 
-        determinante.setBackground(new java.awt.Color(64, 169, 184));
-        determinante.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        determinante.setForeground(new java.awt.Color(255, 255, 255));
-        determinante.setText("Determinante");
-        determinante.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        determinante.setBorderPainted(false);
-        determinante.setContentAreaFilled(false);
-        Panel1.add(determinante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 210, 40));
+        metodoNewton.setBackground(new java.awt.Color(64, 169, 184));
+        metodoNewton.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        metodoNewton.setForeground(new java.awt.Color(255, 255, 255));
+        metodoNewton.setText("Método de Newton Raphson");
+        metodoNewton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        metodoNewton.setBorderPainted(false);
+        metodoNewton.setContentAreaFilled(false);
+        metodoNewton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                metodoNewtonMouseClicked(evt);
+            }
+        });
+        Panel1.add(metodoNewton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 210, 40));
 
-        metodoBiseccion.setBackground(new java.awt.Color(64, 169, 184));
-        metodoBiseccion.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        metodoBiseccion.setForeground(new java.awt.Color(255, 255, 255));
-        metodoBiseccion.setText("Método de Bisección");
-        metodoBiseccion.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        metodoBiseccion.setBorderPainted(false);
-        metodoBiseccion.setContentAreaFilled(false);
-        Panel1.add(metodoBiseccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 210, 40));
+        metodoFalsaPosicion.setBackground(new java.awt.Color(64, 169, 184));
+        metodoFalsaPosicion.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        metodoFalsaPosicion.setForeground(new java.awt.Color(255, 255, 255));
+        metodoFalsaPosicion.setText("Falsa Posición");
+        metodoFalsaPosicion.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        metodoFalsaPosicion.setBorderPainted(false);
+        metodoFalsaPosicion.setContentAreaFilled(false);
+        metodoFalsaPosicion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                metodoFalsaPosicionMouseClicked(evt);
+            }
+        });
+        Panel1.add(metodoFalsaPosicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 210, 40));
 
         programasExtras.setBackground(new java.awt.Color(64, 169, 184));
         programasExtras.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -180,7 +196,21 @@ public class Inicio extends javax.swing.JFrame {
                 programasExtrasMouseClicked(evt);
             }
         });
-        Panel1.add(programasExtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 210, 40));
+        Panel1.add(programasExtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 210, 40));
+
+        metodoBiseccion.setBackground(new java.awt.Color(64, 169, 184));
+        metodoBiseccion.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        metodoBiseccion.setForeground(new java.awt.Color(255, 255, 255));
+        metodoBiseccion.setText("Método de Bisección");
+        metodoBiseccion.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        metodoBiseccion.setBorderPainted(false);
+        metodoBiseccion.setContentAreaFilled(false);
+        metodoBiseccion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                metodoBiseccionMouseClicked(evt);
+            }
+        });
+        Panel1.add(metodoBiseccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 210, 40));
 
         getContentPane().add(Panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 210, 510));
 
@@ -235,26 +265,26 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void metodoMatricesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metodoMatricesActionPerformed
+    private void metodoDeterminanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metodoDeterminanteActionPerformed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_metodoMatricesActionPerformed
+    }//GEN-LAST:event_metodoDeterminanteActionPerformed
 
-    private void metodoMatricesFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_metodoMatricesFocusGained
+    private void metodoDeterminanteFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_metodoDeterminanteFocusGained
 
-    }//GEN-LAST:event_metodoMatricesFocusGained
+    }//GEN-LAST:event_metodoDeterminanteFocusGained
 
-    private void metodoMatricesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoMatricesMousePressed
+    private void metodoDeterminanteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoDeterminanteMousePressed
         // TODO add your handling code here:
-        metodoMatrices.setBackground(FocusColor);
+        metodoDeterminante.setBackground(FocusColor);
         triangularSuperior.setBackground(FocusColor);
         escalonadaReducida.setBackground(DefaultColor);
         matrizTranspuesta.setBackground(DefaultColor);
-        transpuestaInversa.setBackground(DefaultColor);
-        determinante.setBackground(DefaultColor);
-        metodoBiseccion.setBackground(DefaultColor);
+        matrizInversa.setBackground(DefaultColor);
+        metodoNewton.setBackground(DefaultColor);
+        metodoFalsaPosicion.setBackground(DefaultColor);
         programasExtras.setBackground(DefaultColor);
-    }//GEN-LAST:event_metodoMatricesMousePressed
+    }//GEN-LAST:event_metodoDeterminanteMousePressed
 
     private void triangularSuperiorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_triangularSuperiorActionPerformed
         // TODO add your handling code here:
@@ -307,7 +337,7 @@ public static void open(String targetFilePath) throws IOException
 
     }//GEN-LAST:event_matrizTranspuestaMouseClicked
 
-    private void metodoMatricesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoMatricesMouseClicked
+    private void metodoDeterminanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoDeterminanteMouseClicked
           try {
             
           open("C:\\\\Users\\\\perez\\\\OneDrive\\\\Documentos\\\\NetBeansProjects\\\\CalculadoraAlgebraLineal\\\\src\\\\test\\\\java\\\\metodosMatrices.exe");
@@ -316,7 +346,7 @@ public static void open(String targetFilePath) throws IOException
           System.out.println(ex);
         
       }
-    }//GEN-LAST:event_metodoMatricesMouseClicked
+    }//GEN-LAST:event_metodoDeterminanteMouseClicked
 
     private void programasExtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_programasExtrasMouseClicked
 
@@ -331,6 +361,55 @@ public static void open(String targetFilePath) throws IOException
       }
 
     }//GEN-LAST:event_programasExtrasMouseClicked
+
+    private void matrizInversaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_matrizInversaMouseClicked
+       try {
+            
+          open("C:\\\\Users\\\\perez\\\\OneDrive\\\\Documentos\\\\NetBeansProjects\\\\CalculadoraAlgebraLineal\\\\src\\\\test\\\\java\\\\matrizInversa.exe");
+      } catch (IOException ex) {
+      
+          System.out.println(ex);
+        
+      }
+
+
+    }//GEN-LAST:event_matrizInversaMouseClicked
+
+    private void metodoBiseccionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoBiseccionMouseClicked
+               try {
+            
+          open("C:\\\\Users\\\\perez\\\\OneDrive\\\\Documentos\\\\NetBeansProjects\\\\CalculadoraAlgebraLineal\\\\src\\\\test\\\\java\\\\metodoBiseccion.exe");
+      } catch (IOException ex) {
+      
+          System.out.println(ex);
+        
+      }
+
+    }//GEN-LAST:event_metodoBiseccionMouseClicked
+
+    private void metodoNewtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoNewtonMouseClicked
+        
+      try {
+            
+          open("C:\\\\Users\\\\perez\\\\OneDrive\\\\Documentos\\\\NetBeansProjects\\\\CalculadoraAlgebraLineal\\\\src\\\\test\\\\java\\\\metodoNewtonRaphson.exe");
+      } catch (IOException ex) {
+      
+          System.out.println(ex);
+        
+      }
+    }//GEN-LAST:event_metodoNewtonMouseClicked
+
+    private void metodoFalsaPosicionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodoFalsaPosicionMouseClicked
+         try {
+            
+          open("C:\\\\Users\\\\perez\\\\OneDrive\\\\Documentos\\\\NetBeansProjects\\\\CalculadoraAlgebraLineal\\\\src\\\\test\\\\java\\\\metodoFalsaPosicion.exe");
+      } catch (IOException ex) {
+      
+          System.out.println(ex);
+        
+      }
+
+    }//GEN-LAST:event_metodoFalsaPosicionMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -366,13 +445,15 @@ public static void open(String targetFilePath) throws IOException
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Panel1;
-    private javax.swing.JButton determinante;
     private javax.swing.JButton escalonadaReducida;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton matrizInversa;
     private javax.swing.JButton matrizTranspuesta;
     private javax.swing.JButton metodoBiseccion;
-    private javax.swing.JButton metodoMatrices;
+    private javax.swing.JButton metodoDeterminante;
+    private javax.swing.JButton metodoFalsaPosicion;
+    private javax.swing.JButton metodoNewton;
     private javax.swing.JPanel panelBiseccion;
     private javax.swing.JPanel panelDefault;
     private javax.swing.JPanel panelDependencia;
@@ -386,7 +467,6 @@ public static void open(String targetFilePath) throws IOException
     private javax.swing.JLabel subtitulo;
     private javax.swing.JTabbedPane tabDashboard;
     private javax.swing.JLabel titulo;
-    private javax.swing.JButton transpuestaInversa;
     private javax.swing.JButton triangularSuperior;
     // End of variables declaration//GEN-END:variables
 
