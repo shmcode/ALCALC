@@ -45,6 +45,7 @@ public class Inicio extends javax.swing.JFrame {
         programasExtras = new javax.swing.JButton();
         metodoBiseccion = new javax.swing.JButton();
         triangularSuperior1 = new javax.swing.JButton();
+        meotodSecante = new javax.swing.JButton();
         tabDashboard = new javax.swing.JTabbedPane();
         panelDefault = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -94,7 +95,7 @@ public class Inicio extends javax.swing.JFrame {
                 metodoDeterminanteActionPerformed(evt);
             }
         });
-        Panel1.add(metodoDeterminante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 210, 40));
+        Panel1.add(metodoDeterminante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 210, 40));
 
         matrizOperacionesBasicas.setBackground(new java.awt.Color(64, 169, 184));
         matrizOperacionesBasicas.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
@@ -113,7 +114,7 @@ public class Inicio extends javax.swing.JFrame {
                 matrizOperacionesBasicasActionPerformed(evt);
             }
         });
-        Panel1.add(matrizOperacionesBasicas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 210, 40));
+        Panel1.add(matrizOperacionesBasicas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 210, 40));
 
         escalonadaReducida.setBackground(new java.awt.Color(64, 169, 184));
         escalonadaReducida.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -127,7 +128,7 @@ public class Inicio extends javax.swing.JFrame {
                 escalonadaReducidaMouseClicked(evt);
             }
         });
-        Panel1.add(escalonadaReducida, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 210, 40));
+        Panel1.add(escalonadaReducida, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 210, 40));
 
         matrizTranspuesta.setBackground(new java.awt.Color(64, 169, 184));
         matrizTranspuesta.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -141,7 +142,7 @@ public class Inicio extends javax.swing.JFrame {
                 matrizTranspuestaMouseClicked(evt);
             }
         });
-        Panel1.add(matrizTranspuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 210, 40));
+        Panel1.add(matrizTranspuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 210, 40));
 
         matrizInversa.setBackground(new java.awt.Color(64, 169, 184));
         matrizInversa.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -155,7 +156,7 @@ public class Inicio extends javax.swing.JFrame {
                 matrizInversaMouseClicked(evt);
             }
         });
-        Panel1.add(matrizInversa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 210, 40));
+        Panel1.add(matrizInversa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 210, 40));
 
         metodoNewton.setBackground(new java.awt.Color(64, 169, 184));
         metodoNewton.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
@@ -169,7 +170,7 @@ public class Inicio extends javax.swing.JFrame {
                 metodoNewtonMouseClicked(evt);
             }
         });
-        Panel1.add(metodoNewton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 210, 40));
+        Panel1.add(metodoNewton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 210, 40));
 
         metodoFalsaPosicion.setBackground(new java.awt.Color(64, 169, 184));
         metodoFalsaPosicion.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -183,7 +184,7 @@ public class Inicio extends javax.swing.JFrame {
                 metodoFalsaPosicionMouseClicked(evt);
             }
         });
-        Panel1.add(metodoFalsaPosicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 210, 40));
+        Panel1.add(metodoFalsaPosicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 210, 40));
 
         programasExtras.setBackground(new java.awt.Color(64, 169, 184));
         programasExtras.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -197,7 +198,7 @@ public class Inicio extends javax.swing.JFrame {
                 programasExtrasMouseClicked(evt);
             }
         });
-        Panel1.add(programasExtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 210, 40));
+        Panel1.add(programasExtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 210, 40));
 
         metodoBiseccion.setBackground(new java.awt.Color(64, 169, 184));
         metodoBiseccion.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -211,7 +212,7 @@ public class Inicio extends javax.swing.JFrame {
                 metodoBiseccionMouseClicked(evt);
             }
         });
-        Panel1.add(metodoBiseccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 210, 40));
+        Panel1.add(metodoBiseccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 210, 40));
 
         triangularSuperior1.setBackground(new java.awt.Color(64, 169, 184));
         triangularSuperior1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -230,7 +231,21 @@ public class Inicio extends javax.swing.JFrame {
                 triangularSuperior1ActionPerformed(evt);
             }
         });
-        Panel1.add(triangularSuperior1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 210, 40));
+        Panel1.add(triangularSuperior1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 210, 40));
+
+        meotodSecante.setBackground(new java.awt.Color(64, 169, 184));
+        meotodSecante.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        meotodSecante.setForeground(new java.awt.Color(255, 255, 255));
+        meotodSecante.setText("Método Secante");
+        meotodSecante.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        meotodSecante.setBorderPainted(false);
+        meotodSecante.setContentAreaFilled(false);
+        meotodSecante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                meotodSecanteMouseClicked(evt);
+            }
+        });
+        Panel1.add(meotodSecante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 210, 40));
 
         getContentPane().add(Panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 210, 510));
 
@@ -448,6 +463,20 @@ public static void open(String targetFilePath) throws IOException
         // TODO add your handling code here:
     }//GEN-LAST:event_triangularSuperior1ActionPerformed
 
+    private void meotodSecanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_meotodSecanteMouseClicked
+
+      try {
+            
+          open("C:\\\\Users\\\\perez\\\\OneDrive\\\\Documentos\\\\NetBeansProjects\\\\CalculadoraAlgebraLineal\\\\src\\\\test\\\\java\\\\metodoSecante.exe");
+      } catch (IOException ex) {
+      
+          System.out.println(ex);
+        
+      }
+        
+
+    }//GEN-LAST:event_meotodSecanteMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -488,6 +517,7 @@ public static void open(String targetFilePath) throws IOException
     private javax.swing.JButton matrizInversa;
     private javax.swing.JButton matrizOperacionesBasicas;
     private javax.swing.JButton matrizTranspuesta;
+    private javax.swing.JButton meotodSecante;
     private javax.swing.JButton metodoBiseccion;
     private javax.swing.JButton metodoDeterminante;
     private javax.swing.JButton metodoFalsaPosicion;
